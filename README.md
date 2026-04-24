@@ -1,22 +1,20 @@
-# App Privacy Policies
+# app-privacy-policies
 
-Static GitHub Pages site for privacy policies for apps published by Ashraful Islam.
+Privacy policies for apps published by [Ashraful Islam](https://github.com/islamashraful), hosted on GitHub Pages.
 
-## Pages
+## Live
 
-- Home: `https://islamashraful.github.io/app-privacy-policies/`
-- Pause: `https://islamashraful.github.io/app-privacy-policies/pause/`
-- Der Die Das: `https://islamashraful.github.io/app-privacy-policies/der-die-das/`
+**https://islamashraful.github.io/app-privacy-policies/**
 
-## Publishing
+| App | Policy URL |
+|-----|-----------|
+| Pause | `/pause/` |
+| Der Die Das | `/der-die-das/` |
 
-1. Create a GitHub repository named `app-privacy-policies`.
-2. Push this folder to the repository's default branch.
-3. In GitHub, open Settings > Pages.
-4. Set the source to deploy from the default branch and repository root.
-5. Use the Pause URL above in App Store Connect.
+## Structure
 
-## Maintenance
+Each app has its own folder with an `index.html`. Shared styles live in `assets/`.
 
-Each app has its own folder with an `index.html` file. Shared styles live in `assets/styles.css`.
-Update the "Last updated" date on a policy whenever the policy content changes.
+## Deployment
+
+Push to `main` — GitHub Pages deploys automatically from the repository root.
