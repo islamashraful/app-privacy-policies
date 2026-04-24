@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy policies for apps published by Ashraful Islam." />
+  <title>App Privacy Policies | Ashraful Islam</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/pause-icon.png" />
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("privacyPoliciesTheme");
+        if (savedTheme === "light" || savedTheme === "dark") {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      } catch (_error) {}
+    })();
+  </script>
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Ashraful Islam</p>
+        <h1>App Privacy Policies</h1>
+        <p class="lead">
+          A single home for privacy policies for mobile apps published by Ashraful Islam.
+          Choose an app below to read how its data is handled.
+        </p>
+        <div class="meta-row" aria-label="Contact details">
+          <span class="meta-pill">Publisher: Ashraful Islam</span>
+          <span class="meta-pill">Contact: hello.islamashraful@gmail.com</span>
+        </div>
+      </div>
+      <div class="theme-control" role="group" aria-label="Color theme">
+        <button type="button" data-theme-option="system" aria-pressed="true">System</button>
+        <button type="button" data-theme-option="light" aria-pressed="false">Light</button>
+        <button type="button" data-theme-option="dark" aria-pressed="false">Dark</button>
+      </div>
+    </header>
+
+    <section class="directory-grid" aria-label="Available privacy policies">
+      <div class="app-card">
+        <img src="assets/pause-icon.png" width="76" height="76" alt="Pause app icon" />
+        <div>
+          <h2>Pause</h2>
+          <p>
+            A mindful spending app that helps you wait before buying non-essential items.
+          </p>
+          <a class="app-card-link" href="pause/">Read Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <img src="assets/der-die-das-icon.png" width="76" height="76" alt="Der Die Das app icon" />
+        <div>
+          <h2>Der Die Das: Deutsch Lernen</h2>
+          <p>
+            A German noun and article learning app with local learning data and optional AI suggestions.
+          </p>
+          <a class="app-card-link" href="der-die-das/">Read Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      App Privacy Policies · <a href="mailto:hello.islamashraful@gmail.com">hello.islamashraful@gmail.com</a>
+    </footer>
+  </main>
+  <script src="assets/theme.js"></script>
+</body>
+</html>
