@@ -28,7 +28,7 @@
           <div>
             <p class="eyebrow">Pause</p>
             <h1>Privacy Policy</h1>
-            <p class="lead">Last updated: April 24, 2026</p>
+            <p class="lead">Last updated: April 25, 2026</p>
           </div>
         </div>
       </div>
@@ -56,246 +56,108 @@
       </div>
 
       <div class="policy-content">
-        <span class="notice">No accounts, no ads, no personal tracking — anonymous analytics and crash reporting only</span>
+        <span class="notice">No accounts, no ads, no personal tracking; anonymous analytics and crash reporting only</span>
 
         <p id="privacy-title">
-          This Privacy Policy explains how <strong>Pause</strong> ("the app"), published by
-          <strong>Ashraful Islam</strong>, handles information. Pause is designed to help you wait
-          before buying non-essential items. The app is built around local, on-device storage and
-          does not require an account.
+          Your privacy is important to us. This policy explains what information
+          <strong>Pause</strong> ("the app"), published by <strong>Ashraful Islam</strong>,
+          collects, why, and how it is used. Pause is designed to help you wait before buying
+          non-essential items and does not require an account.
         </p>
 
         <section aria-labelledby="information-we-collect">
           <h2 id="information-we-collect">1. Information We Collect</h2>
-
-          <h3>1a. Data you enter — stored locally on your device</h3>
-          <p>
-            Pause does not require an account and does not ask for your name, email address, phone
-            number, payment information, or location. Everything you type into the app stays on
-            your device in a local database. This includes:
-          </p>
           <ul>
-            <li>Item names you add to your waiting list</li>
-            <li>Optional prices and notes you choose to enter</li>
-            <li>Item statuses — waiting, ready for review, bought, skipped, or bypassed</li>
-            <li>Dates used by the app, such as when an item was created, when it becomes ready for review, and when a decision was made</li>
-            <li>App settings, including waiting period, currency, language, onboarding state, and notification preference</li>
+            <li>
+              <strong>Waiting-list content you create</strong> - item names, optional prices,
+              notes, statuses, dates, and settings you choose to enter. This data is stored locally
+              on your device and is not sent to our servers.
+            </li>
+            <li>
+              <strong>Anonymous usage data</strong> - general app activity, such as opening the app
+              or using a feature. This is used only to understand how the app is used and improve
+              the experience.
+            </li>
+            <li>
+              <strong>Crash and error data</strong> - basic diagnostic information may be collected
+              when the app crashes or encounters an error, so we can find and fix bugs.
+            </li>
           </ul>
-          <p>
-            None of this content is transmitted to Ashraful Islam's servers or shared with third parties.
-          </p>
-
-          <h3>1b. Anonymous device identifier</h3>
-          <p>
-            The app generates a random anonymous identifier (a UUID prefixed with <code>pause_</code>)
-            the first time it launches and stores it in the local database. This identifier is not
-            linked to your Apple ID, name, email, or any other personal information. It is used
-            solely to associate anonymous analytics events from the same device so aggregate
-            product behaviour can be understood (see Section 5).
-          </p>
-
-          <h3>1c. Diagnostic and crash data</h3>
-          <p>
-            When a crash or unhandled error occurs, technical diagnostic information is sent to
-            Sentry (see Section 6). This may include the type of error, a stack trace, the app
-            version, and device/OS type. Sentry does not receive your item names, notes, prices,
-            or any other content you entered into Pause.
-          </p>
         </section>
 
         <section aria-labelledby="information-we-do-not-collect">
           <h2 id="information-we-do-not-collect">2. Information We Do Not Collect</h2>
           <ul>
-            <li>No user accounts or authentication credentials</li>
-            <li>No name, email address, or phone number</li>
-            <li>No advertising identifiers (IDFA or equivalent)</li>
-            <li>No cross-app or cross-website tracking</li>
-            <li>No precise or approximate location data</li>
-            <li>No contacts, photos, camera, or microphone data</li>
-            <li>No item names, notes, or prices are sent to any server</li>
+            <li>Name, email address, or phone number</li>
+            <li>Payment information</li>
+            <li>Location data</li>
+            <li>Contacts, photos, camera, or microphone data</li>
+            <li>Browsing history or cross-app tracking data</li>
+            <li>Advertising data or data used for targeted advertising</li>
           </ul>
-        </section>
-
-        <section aria-labelledby="how-information-is-used">
-          <h2 id="how-information-is-used">3. How Information Is Used</h2>
-          <p>
-            The information stored on your device is used only to provide the app's core features:
-            keeping your waiting list, calculating review dates, showing your decision history,
-            formatting prices, remembering your settings, and optionally scheduling local reminders.
-          </p>
-          <p>
-            The anonymous identifier and aggregate usage events are used solely to understand how
-            people use the app in general — for example, which features are most used or at what
-            point users complete onboarding — so that the app can be improved. This data is never
-            used for advertising, profiling, or sold to third parties.
-          </p>
-          <p>
-            Crash data is used only to identify and fix software bugs.
-          </p>
-        </section>
-
-        <section aria-labelledby="local-storage">
-          <h2 id="local-storage">4. Local Storage</h2>
-          <p>
-            Pause stores all user-entered data in a local SQLite database on your device using
-            <code>expo-sqlite</code>. Ashraful Islam does not operate a user account system for
-            Pause and does not store your waiting-list items on remote servers.
-          </p>
-          <p>
-            Because your app data is local to your device, it may be included in device backups
-            (e.g. iCloud Backup or Android cloud backup) depending on your operating system and
-            backup settings.
-          </p>
-        </section>
-
-        <section aria-labelledby="notifications">
-          <h2 id="notifications">5. Notifications</h2>
-          <p>
-            Notifications are optional and require your explicit permission. If you enable them,
-            Pause schedules local reminders on your device to notify you when an item is ready for
-            review. The notification title and body may include the item name so the reminder is
-            meaningful to you.
-          </p>
-          <p>
-            Pause uses only local scheduled notifications. It does not register a remote push
-            notification token with Ashraful Islam and does not transmit your item list to any
-            notification server.
-          </p>
         </section>
 
         <section aria-labelledby="third-party-services">
-          <h2 id="third-party-services">6. Third-Party Services</h2>
-
-          <h3>PostHog — Anonymous product analytics</h3>
+          <h2 id="third-party-services">3. Third-Party Services</h2>
           <p>
-            Pause uses <a href="https://posthog.com/privacy" rel="noopener noreferrer" target="_blank">PostHog</a>
-            to collect anonymous, aggregate product analytics. PostHog's servers are hosted in the
-            EU (<code>eu.i.posthog.com</code>). The data sent to PostHog includes:
-          </p>
-          <ul>
-            <li>The anonymous device identifier described in Section 1b</li>
-            <li>App version, platform (iOS/Android), and environment</li>
-            <li>Device language and selected currency (e.g. "USD") — not your identity</li>
-            <li>App lifecycle events (app opened, backgrounded)</li>
-            <li>Feature interaction events such as "item added", "item decision made", "onboarding step completed", "settings changed", or "notification permission outcome" — described using bucketed or enumerated values, never free text you typed</li>
-            <li>Screen navigation paths — these use route identifiers, not your item names or content</li>
-          </ul>
-          <p>
-            PostHog is configured with session replay and touch/screen autocapture disabled.
-            Your item names, notes, prices, and any text you enter are not sent to PostHog.
+            The app uses <strong>PostHog</strong> for anonymous usage analytics. PostHog collects
+            anonymous event data, such as which features are used and how often. This data is not
+            linked to your name, email address, or personal identity, and it is not used for
+            advertising. We do not sell, rent, or trade your personal information. PostHog's
+            privacy policy:
+            <a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer">
+              posthog.com/privacy
+            </a>.
           </p>
           <p>
-            PostHog's privacy policy: <a href="https://posthog.com/privacy" rel="noopener noreferrer" target="_blank">posthog.com/privacy</a>
-          </p>
-
-          <h3>Sentry — Crash and error reporting</h3>
-          <p>
-            Pause uses <a href="https://sentry.io/privacy/" rel="noopener noreferrer" target="_blank">Sentry</a>
-            for crash and error reporting in the production version of the app. When the app crashes
-            or encounters an unhandled error, Sentry receives:
-          </p>
-          <ul>
-            <li>Error type and stack trace</li>
-            <li>App version and build number</li>
-            <li>Device type and operating system version</li>
-            <li>A trace sample (approximately 20% of sessions) for performance monitoring</li>
-          </ul>
-          <p>
-            Sentry does not receive your item names, notes, prices, or decision history. Crash
-            reporting is disabled in development builds and is only active in the publicly
-            distributed version.
-          </p>
-          <p>
-            Sentry's privacy policy: <a href="https://sentry.io/privacy/" rel="noopener noreferrer" target="_blank">sentry.io/privacy</a>
-          </p>
-
-          <h3>Expo / EAS Update — App updates</h3>
-          <p>
-            Pause uses Expo's over-the-air (OTA) update technology to deliver app updates. Update
-            checks contact Expo's servers and involve standard technical metadata such as app
-            version and update channel. Your item names, notes, prices, and decision history are
-            not transmitted as part of this process.
-          </p>
-          <p>
-            Expo's privacy policy: <a href="https://expo.dev/privacy" rel="noopener noreferrer" target="_blank">expo.dev/privacy</a>
-          </p>
-
-          <h3>Apple App Store version check</h3>
-          <p>
-            To inform you of available updates, Pause queries Apple's public iTunes Search API
-            using the app's bundle identifier (<code>com.ashislam.pause</code>) to compare the
-            installed version with the latest version on the App Store. This request does not
-            include any user content.
+            The app uses <strong>Sentry</strong> for crash and error reporting. Sentry helps us
+            identify and fix software problems. Your waiting-list item names, notes, prices, and
+            decision history are not sent to Sentry. Sentry's privacy policy:
+            <a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">
+              sentry.io/privacy
+            </a>.
           </p>
         </section>
 
-        <section aria-labelledby="data-sharing">
-          <h2 id="data-sharing">7. Data Sharing and Sale</h2>
+        <section aria-labelledby="data-storage">
+          <h2 id="data-storage">4. Data Storage</h2>
           <p>
-            Ashraful Islam does not sell, rent, or trade your personal information to any third
-            party. The only data shared with third parties is the anonymous analytics data described
-            in Section 6 (PostHog) and the technical crash/diagnostic data (Sentry), neither of
-            which includes your item content or identifies you personally.
+            Your waiting-list items, notes, prices, decision history, and app settings are stored
+            locally on your device. We do not operate a user account system for Pause and do not
+            store your waiting-list data on remote servers.
           </p>
         </section>
 
-        <section aria-labelledby="retention-deletion">
-          <h2 id="retention-deletion">8. Data Retention and Deletion</h2>
+        <section aria-labelledby="data-retention-and-deletion">
+          <h2 id="data-retention-and-deletion">5. Data Retention and Deletion</h2>
           <p>
-            Your Pause data (items, settings, and the anonymous device identifier) remains on your
-            device until you delete items, reset the relevant device storage, or uninstall the app.
-            Uninstalling Pause removes the app's locally stored data from your device, subject to
-            your operating system and backup behaviour.
-          </p>
-          <p>
-            Because Pause does not store your item content on Ashraful Islam's servers, there is no
-            remote account data to request deletion of.
-          </p>
-          <p>
-            Anonymous analytics events stored by PostHog are retained according to
-            <a href="https://posthog.com/privacy" rel="noopener noreferrer" target="_blank">PostHog's data retention policy</a>.
-            These events are not linked to any personally identifiable information.
+            You can delete items in the app. Uninstalling the app removes locally stored app data
+            from your device, subject to your device backup settings. Because we do not hold your
+            waiting-list data on our servers, there is nothing further to request deletion of.
           </p>
         </section>
 
         <section aria-labelledby="childrens-privacy">
-          <h2 id="childrens-privacy">9. Children's Privacy</h2>
+          <h2 id="childrens-privacy">6. Children's Privacy</h2>
           <p>
-            Pause is not directed to children under 13. We do not knowingly collect personal
-            information from children under 13. If you believe a child under 13 has provided
-            personal information through the app, please contact us so we can take appropriate
-            action.
+            The app is not directed at children under the age of 13, and we do not knowingly collect
+            personal information from children.
           </p>
         </section>
 
-        <section aria-labelledby="your-rights">
-          <h2 id="your-rights">10. Your Rights</h2>
+        <section aria-labelledby="changes-to-this-policy">
+          <h2 id="changes-to-this-policy">7. Changes to This Policy</h2>
           <p>
-            Because Pause does not collect personally identifiable information and all item data
-            is stored locally on your device, most data subject rights (access, correction,
-            portability, deletion) can be exercised directly within the app or by uninstalling it.
-          </p>
-          <p>
-            For questions about the anonymous analytics data held by PostHog, you may contact us
-            at the address below with your anonymous device identifier (visible in the app's
-            settings if applicable) and we will assist with any applicable request.
-          </p>
-        </section>
-
-        <section aria-labelledby="changes">
-          <h2 id="changes">11. Changes to This Policy</h2>
-          <p>
-            This Privacy Policy may be updated from time to time to reflect changes in the app's
-            features or applicable law. Any changes will be posted on this page with an updated
-            "Last updated" date. Continued use of the app after a policy update constitutes
-            acceptance of the revised policy.
+            We may update this Privacy Policy from time to time. Any changes will be posted at this
+            URL with an updated date. Continued use of the app after changes are posted constitutes
+            your acceptance of the revised policy.
           </p>
         </section>
 
         <section aria-labelledby="contact">
-          <h2 id="contact">12. Contact</h2>
+          <h2 id="contact">8. Contact</h2>
           <p>
-            If you have questions about this Privacy Policy, contact:
+            If you have questions or concerns about this Privacy Policy, please contact us at:
             <a href="mailto:hello.islamashraful@gmail.com">hello.islamashraful@gmail.com</a>
           </p>
         </section>
