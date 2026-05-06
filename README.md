@@ -1,19 +1,18 @@
 # app-privacy-policies
 
-Privacy policies for apps published by [Ashraful Islam](https://github.com/islamashraful), hosted on GitHub Pages.
+Privacy policies for mobile apps published by [Ashraful Islam](https://github.com/islamashraful), hosted on GitHub Pages.
 
 ## Live
 
 **https://islamashraful.github.io/app-privacy-policies/**
 
-| App | Policy URL |
-|-----|-----------|
-| Pause | `/pause/` |
-| Der Die Das | `/der-die-das/` |
+The site root lists every policy; each app also has a dedicated path below.
 
-## Structure
-
-Each app has its own folder with an `index.html`. Shared styles live in `assets/`.
+| App (App Store name) | Privacy policy | App Store |
+| --- | --- | --- |
+| Pause - Smart Spending | [`/pause/`](https://islamashraful.github.io/app-privacy-policies/pause/) | [View listing](https://apps.apple.com/app/id6763107241) |
+| Der Die Das: Deutsch Lernen | [`/der-die-das/`](https://islamashraful.github.io/app-privacy-policies/der-die-das/) | [View listing](https://apps.apple.com/app/id6762269039) |
+| Done & Dusted: Daily Reset | [`/done-and-dusted/`](https://islamashraful.github.io/app-privacy-policies/done-and-dusted/) | [View listing](https://apps.apple.com/app/id6763887989) |
 
 ## Deployment
 

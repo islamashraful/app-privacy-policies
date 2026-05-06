@@ -299,12 +299,42 @@ a:focus-visible {
 }
 
 .app-card img,
+.app-card-icon-link img,
 .policy-icon {
   width: 76px;
   height: 76px;
   border-radius: 17px;
   box-shadow: 0 8px 24px rgba(32, 32, 29, 0.18);
   flex-shrink: 0;
+}
+
+.app-card-icon-link {
+  display: block;
+  line-height: 0;
+  border-radius: 17px;
+  flex-shrink: 0;
+}
+
+.app-card-icon-link:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 3px;
+}
+
+.app-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  margin: 0;
+}
+
+.app-card-actions .app-store-link {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .app-card h2 {
@@ -320,6 +350,8 @@ a:focus-visible {
 }
 
 .app-card-link {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -328,13 +360,6 @@ a:focus-visible {
   font-size: 0.92rem;
   text-decoration: none;
   transition: gap 0.15s ease, color 0.15s ease;
-}
-
-.app-card-link::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: var(--radius);
 }
 
 .app-card-link .arrow {
@@ -378,6 +403,18 @@ a:focus-visible {
   gap: 22px;
   align-items: center;
   padding-bottom: 32px;
+}
+
+.policy-hero > a {
+  display: block;
+  line-height: 0;
+  border-radius: 17px;
+  flex-shrink: 0;
+}
+
+.policy-hero > a:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 3px;
 }
 
 .policy-card {
